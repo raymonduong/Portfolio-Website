@@ -25,13 +25,3 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
-$(function () {
-  $(".scroll-down").click(function () {
-    $("html, body").animate(
-      { scrollTop: $("section.project").offset().top },
-      "slow"
-    );
-    return false;
-  });
-});
-
