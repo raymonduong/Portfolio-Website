@@ -166,11 +166,11 @@ footer p {
 .skills li img {
   filter: invert(1) drop-shadow(0 0 0.15rem black);
   margin-bottom: 5px;
-  width: 100px;
+  width: 75px;
 }
 @media (min-width: 780px) {
   .skills li img {
-    width: 50px;
+    width: 5vw;
   }
 }
 .logo {
