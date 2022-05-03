@@ -14,7 +14,7 @@ html {
 .contactIcons {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
   margin: 20px auto 60px auto;
   ms-flex-pack: center;
@@ -22,24 +22,16 @@ html {
   padding: 20px 0;
   webkit-box-pack: center;
 }
+@media (min-width: 2000px) {
+  .contactIcons {
+    gap: 5vw;
+  }
+}
 .contactIcons li {
-  align-items: center;
   display: flex;
-  display: -ms-flexbox;
-  display: -webkit-box;
   flex-direction: column;
-  flex-wrap: wrap;
-  font-size: 1.2rem;
-  list-style: none;
-  ms-flex-align: center;
-  ms-flex-direction: column;
-  ms-flex-wrap: wrap;
-  padding: 20px 0;
+  justify-content: center;
   text-align: center;
-  webkit-box-align: center;
-  webkit-box-direction: normal;
-  webkit-box-orient: vertical;
-  width: 100px;
 }
 @media (min-width: 780px) {
   .contactIcons li {
@@ -50,7 +42,12 @@ html {
 .contactIcons li img {
   filter: invert(1) drop-shadow(0 0 0.15rem black);
   margin-bottom: 5px;
-  width: 100px;
+  width: 75px;
+}
+@media (min-width: 780px) {
+  .contactIcons li img {
+    width: 5vw;
+  }
 }
 body {
   background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%)
@@ -60,6 +57,11 @@ body {
 }
 h2 {
   text-align: center;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2vw;
+  }
 }
 .home {
   margin-bottom: 50vh;
@@ -74,6 +76,11 @@ p {
   margin-top: 50px;
   text-align: center;
   width: 80%;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1vw;
+  }
 }
 .picture {
   border-radius: 30px;
@@ -102,11 +109,17 @@ p {
   object-fit: cover;
   width: 300px;
 }
+@media (min-width: 992px) {
+  .picture3 {
+    height: 20vw;
+    width: 20vw;
+  }
+}
 .pictures {
   align-items: center;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 2vw;
   justify-content: center;
 }
 figcaption {
@@ -131,6 +144,11 @@ footer p {
   width: auto;
   font-size: 1rem;
   text-shadow: 1px 1px black;
+}
+@media (min-width: 768px) {
+  footer p {
+    font-size: 1vw;
+  }
 }
 .skills {
   display: flex;
@@ -160,7 +178,8 @@ footer p {
 @media (min-width: 780px) {
   .skills li {
     margin: 0 20px;
-    width: 120px;
+    width: 7vw;
+    font-size: 1vw;
   }
 }
 .skills li img {
@@ -174,7 +193,16 @@ footer p {
   }
 }
 .logo {
-  width: 40px;
+  height: 30px;
+  padding-top: 10%;
+  width: 30px;
+}
+@media (min-width: 768px) {
+  .logo {
+    height: 6vh;
+    padding-top: 10%;
+    width: 3vw;
+  }
 }
 span {
   color: rgb(105, 172, 218);
@@ -182,12 +210,18 @@ span {
 .title {
   align-items: center;
   display: flex;
+  font-size: 2.5rem;
   font-size: 2.5vw;
   justify-content: center;
   padding-bottom: 2vh;
   padding-left: 1vh;
   padding-right: 1vh;
   text-align: center;
+}
+@media (min-width: 992px) {
+  .title {
+    font-size: 2.5vw;
+  }
 }
 .typewriter {
   display: inline-block;
@@ -321,16 +355,14 @@ a {
 }
 .nav-link {
   color: #f4f4f9;
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   font-weight: 400;
+}
+li {
+  padding: 0;
 }
 .nav-link:hover {
   color: rgb(105, 172, 218);
-}
-.nav-logo {
-  color: #f4f4f9;
-  font-size: 2.1rem;
-  font-weight: 500;
 }
 #section03 a {
   padding-top: 60px;
@@ -414,7 +446,7 @@ body {
     padding-top: 10vh;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   section {
     height: 90%;
@@ -425,12 +457,9 @@ body {
   .home {
     margin-bottom: 40vh;
     margin-top: 10vh;
+    font-size: 3vw;
   }
-  .logo {
-    height: 30px;
-    padding-top: 10%;
-    width: 30px;
-  }
+
   .picture {
     width: 80%;
   }
